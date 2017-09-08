@@ -162,11 +162,6 @@ int main (int argc, char *argv[])
   nifti_set_debug_level(3);
   int Errors=0;
   {
-  PrintTest("NOT REALLY AN ERROR, JUST TESTING THE ERROR TEST REPORTING MECHANISM",1,NIFTITEST_FALSE,&Errors);
-  PrintTest("NOT REALLY AN ERROR, JUST TESTING THE ERROR COUNTING MECHANISM",Errors==1,NIFTITEST_FALSE,&Errors);
-  Errors=0;
-  }
-  {
   const char write_image_filename[6][64]={
     "ATestReferenceImageForReadingAndWriting.nii",
     "ATestReferenceImageForReadingAndWriting.hdr",
